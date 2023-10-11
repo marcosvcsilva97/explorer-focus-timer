@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./src/main.js" defer></script>
+    <title>Focus Timer</title>
+</head>
+<body>
+    <div id="app">
+        <section id="timer">
+            <div id="time">
+                <span id="minutes">25</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </div>
+            <div id="controls">
+                <button data-action="running" class="ph ph-play-circle">
+                    <span class="sr-only">Play</span>
+                </button>
+                <button data-action="running" class="ph ph-pause-circle">
+                    <span class="sr-only">Pausar</span>
+                </button>
+                <button data-action="reset" class="ph ph-stop-circle">
+                    <span class="sr-only">Resetar</span>
+                </button>
+                <button data-action="add" class="ph ph-plus-circle">
+                    <span class="sr-only">Adicionar minutos</span>
+                </button>
+                <button data-action="remove" class="ph ph-minus-circle">
+                    <span class="sr-only">Retirar minutos</span>
+                </button>
+            </div>
+        </section>
+        <section id="sounds">
+            <button data-action="tree" class="ph ph-tree">
+                <span class="sr-only">Som de Floresta</span>
+            </button>
+            <button data-action="rain" class="ph ph-cloud-rain">
+                <span class="sr-only">Som de Chuva</span>
+            </button>
+            <button data-action="storeFront" class="ph ph-storefront">
+                <span class="sr-only">Som de Cafeteria</span>
+            </button>
+            <button data-action="flame" class="ph ph-flame">
+                <span class="sr-only">Som de Lareira</span>
+            </button>
+        </section>
+    </div>
+</body>
+</html>

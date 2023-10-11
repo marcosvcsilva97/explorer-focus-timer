@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --color-text: #323238;
+    --bg-button: #02799D;
+    --color-button: #FFFFFF;
+}
+
+.sr-only {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    padding: 0px;
+    border: 0;
+    appearence: none;
+}
+
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle {
+    display: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    height: 100vh;
+}
+
+#time {
+    color: var(--color-text);
+    font-size: 12.6rem;
+    font-weight: 500;
+    margin-bottom: 1.7rem;
+}
+
+#controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+#controls button {
+    width: 4.8rem;
+    height: 4.8rem;
+    font-size: 4.8rem;
+    color: var(--color-text);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#controls button:hover {
+    color: var(--bg-button);
+}
+
+#sounds {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem
+}
+
+#sounds button {
+    width: 13.8rem;
+    height: 15.2rem;
+    color: var(--color-text);
+    border-radius: 2.4rem;
+    border: none;
+    font-size: 6.4rem;
+    cursor: pointer;
+}
+
+#sounds button:hover {
+    background-color: var(--bg-button);
+    color: var(--color-button);
+}
+
+#sounds button.active {
+    background-color: var(--bg-button);
+    color: var(--color-button);
+}
